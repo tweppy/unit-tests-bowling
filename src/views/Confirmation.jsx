@@ -14,10 +14,10 @@ function Confirmation() {
       <Top title="See you soon!" />
       {state ? (
         <form className="confirmation__details">
-          <Input label="When" type="text" customClass="confirmation__input" defaultValue={state.confirmationDetails.when.replace("T", " ")} disabled="disabled" />
-          <Input label="Who" type="text" customClass="confirmation__input" defaultValue={state.confirmationDetails.people} disabled="disabled" />
-          <Input label="Lanes" type="text" customClass="confirmation__input" defaultValue={state.confirmationDetails.lanes} disabled="disabled" />
-          <Input label="Booking number" type="text" customClass="confirmation__input" defaultValue={state.confirmationDetails.id} disabled="disabled" />
+          <Input label="When" title="When" type="text" customClass="confirmation__input" defaultValue={state.confirmationDetails.when} disabled="disabled" />
+          <Input label="Who" title="People" type="text" customClass="confirmation__input" defaultValue={state.confirmationDetails.people} disabled="disabled" />
+          <Input label="Lanes" title="Lanes" type="text" customClass="confirmation__input" defaultValue={state.confirmationDetails.lanes} disabled="disabled" />
+          <Input label="Booking number" title="BookingId" type="text" customClass="confirmation__input" defaultValue={state.confirmationDetails.id} disabled="disabled" />
           <article className="confirmation__price">
             <p>Total:</p>
             <p>{state.confirmationDetails.price} sek</p>
